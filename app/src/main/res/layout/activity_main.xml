@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:padding="10dp"
+    tools:context=".Controlador.MainActivity">
+
+    <ImageView
+        android:id="@+id/imgMarca"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:visibility="gone"
+        android:src="@drawable/mympp" />
+
+    <EditText
+        android:id="@+id/txtUsuario"
+        android:layout_below="@id/imgMarca"
+        android:hint="DNI"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/edittext_redondo"
+        android:textColor="@color/colorNegro"
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:textSize="20dp"
+        android:maxLength="8"
+        android:gravity="center"
+        android:layout_height="40dp" />
+
+    <!--
+    <EditText
+        android:id="@+id/txtPassword"
+        android:hint="Contraseña"
+        android:layout_below="@id/txtUsuario"
+        android:background="@drawable/edittext_redondo"
+        android:textColor="@color/colorNegro"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    -->
+    <Button
+        android:id="@+id/btnAcceder"
+        android:text="INGRESAR"
+        android:background="@drawable/boton_redondo"
+        android:textColor="@color/colorBlanco"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

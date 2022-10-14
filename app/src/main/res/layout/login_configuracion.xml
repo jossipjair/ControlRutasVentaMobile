@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/lblLoginConfiguracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Acceso Configuración"
+        android:textAlignment="center"
+        android:textColor="@color/colorAzul"
+        android:textSize="25dp" />
+
+    <EditText
+        android:id="@+id/txtUsuarioConfiguracion"
+        android:layout_below="@+id/lblLoginConfiguracion"
+        android:hint="Usuario"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittext_redondo_login_dialog"
+        android:textColor="@color/colorNegro"
+        android:layout_width="match_parent"
+        android:inputType="textCapCharacters"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:id="@+id/txtPasswordConfiguracion"
+        android:hint="Contraseña"
+        android:layout_below="@id/txtUsuarioConfiguracion"
+        android:background="@drawable/edittext_redondo_login_dialog"
+        android:textColor="@color/colorNegro"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <Button
+        android:id="@+id/btnAccederConfiguracion"
+        android:text="INGRESAR"
+        android:background="@drawable/boton_redondo_login_dialog"
+        android:textColor="@color/colorBlanco"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/txtPasswordConfiguracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

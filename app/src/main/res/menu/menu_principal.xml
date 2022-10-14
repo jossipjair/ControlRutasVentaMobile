@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/mnuDescargarDatos"
+        android:title="@string/configuracion"
+        app:showAsAction="never"></item>
+
+    <item android:id="@+id/mnuEnviaDatosToServer"
+        android:title="@string/sincroniza"
+        app:showAsAction="never"></item>
+
+    <item android:id="@+id/mnuReportes"
+        android:title="@string/reportes"
+        app:showAsAction="never"></item>
+
+    <item android:id="@+id/mnuConfigura"
+        android:title="Configura Servicio"
+        app:showAsAction="never"
+        android:visible="true"></item>
+</menu>

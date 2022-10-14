@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controlador.RegistraCliente">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Registro Cliente"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAzul"
+        android:id="@+id/lblRegistroCliente" />
+
+    <TextView
+        android:id="@+id/lblDetalleClientes"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/lblRegistroCliente"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorCeleste"
+        android:text="Descripción de Cliente"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+
+        android:id="@+id/txtRucCliente"
+        android:layout_below="@id/lblDetalleClientes"
+        android:hint="Ruc o Dni de Cliente"
+        android:inputType="number"
+        android:maxLength="11"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtNombreCliente"
+        android:layout_below="@id/txtRucCliente"
+        android:hint="Nombre de Cliente"
+        android:inputType="textCapCharacters"
+        android:layout_marginTop="10dp"
+        android:maxLength="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtPersonaContacto"
+        android:layout_below="@id/txtNombreCliente"
+        android:hint="Persona Contacto"
+        android:inputType="textCapCharacters"
+        android:layout_marginTop="10dp"
+        android:maxLength="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtTelefonoContacto"
+        android:layout_below="@id/txtPersonaContacto"
+        android:hint="Teléfono Contacto"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:maxLength="20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtDireccionCliente"
+        android:layout_below="@id/txtTelefonoContacto"
+        android:hint="Dirección Cliente"
+        android:inputType="textCapCharacters"
+        android:layout_marginTop="10dp"
+        android:maxLength="100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtLatitud"
+        android:layout_below="@id/txtDireccionCliente"
+        android:hint="Latitud"
+        android:enabled="false"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/txtLongitud"
+        android:layout_below="@id/txtLatitud"
+        android:hint="Longitud"
+        android:enabled="false"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <Button
+        android:id="@+id/btnMuestraUbicacion"
+        android:layout_below="@+id/txtLongitud"
+        android:text="Captura Coordenadas GPS"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorVerde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnGuardarCliente"
+        android:layout_below="@+id/btnMuestraUbicacion"
+        android:text="Guardar Registro Cliente"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorAzul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<!--
+    <TextView
+        android:id="@+id/lblMuestraClientes"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/btnGuardarCliente"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlanco"
+        android:background="@color/colorNegro"
+        android:text="Lista de Clientes"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+-->
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout >

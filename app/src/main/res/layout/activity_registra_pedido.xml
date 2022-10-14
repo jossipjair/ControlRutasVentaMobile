@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controlador.RegistraPedido">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/lblRegistraPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro Pedido"
+                android:textAlignment="center"
+                android:textColor="@color/colorAzul"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/lblPedidoData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblRegistraPedido"
+                android:layout_marginTop="20dp"
+                android:text="Código de Pedido"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlanco"
+                android:background="@color/colorCeleste"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/txtIdPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lblPedidoData"
+                android:enabled="false"
+                android:gravity="center"
+                android:textColor="@color/colorNegro" />
+
+
+            <Button
+                android:id="@+id/btnSeleccionaCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtIdPedido"
+                android:layout_marginTop="10dp"
+                android:text=".:: SELECCIONAR CLIENTE ::." />
+
+            <EditText
+                android:id="@+id/txtNombreClientePedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSeleccionaCliente"
+                android:layout_marginTop="10dp"
+                android:enabled="false"
+                android:hint="Nombre de Cliente"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/colorNegro" />
+
+            <EditText
+                android:id="@+id/txtDespacharA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNombreClientePedido"
+                android:layout_marginTop="10dp"
+                android:hint="Entregar pedido a..."
+                android:maxLength="50"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/colorNegro" />
+
+            <EditText
+                android:id="@+id/txtFechaEntregaPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDespacharA"
+                android:layout_marginTop="10dp"
+                android:focusable="false"
+                android:editable="false"
+                android:hint="Fecha entrega pedido"
+                android:inputType="textCapCharacters"
+                android:textColor="@color/colorNegro" />
+
+            <Spinner
+                android:id="@+id/spFormaPago"
+                android:spinnerMode="dialog"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtFechaEntregaPedido"
+                android:layout_marginTop="10dp"></Spinner>
+
+            <EditText
+                android:id="@+id/txtObservacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spFormaPago"
+                android:layout_marginTop="10dp"
+                android:hint="Observación"
+                android:maxLength="200"
+                android:inputType="textCapCharacters|textMultiLine"
+                android:textColor="@color/colorNegro" />
+
+            <TextView
+                android:id="@+id/lblDetallePedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtObservacion"
+                android:layout_marginTop="15dp"
+
+                android:text="Detalle Pedido"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlanco"
+                android:background="@color/colorCeleste"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btnAgregarDetallePedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lblDetallePedido"
+                android:layout_marginTop="10dp"
+                android:text=".:: AGREGAR PRODUCTOS ::." />
+
+            <TextView
+                android:id="@+id/lblTotalPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnAgregarDetallePedido"
+                android:layout_marginTop="15dp"
+                android:textSize="2dp"
+                android:background="@color/colorNegro"/>
+
+            <LinearLayout
+                android:id="@+id/layout_totalventa"
+                android:orientation="horizontal"
+                android:layout_below="@+id/lblTotalPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/lblTituloTotal"
+                    android:layout_below="@+id/lblTotalPedido"
+                    android:layout_marginTop="5dp"
+                    android:textSize="35dp"
+                    android:text="TOTAL:"
+                    android:textColor="@color/colorNegro"
+                    android:textStyle="bold"
+                    android:textAlignment="textStart"
+                    android:padding="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    tools:ignore="RtlCompat" />
+
+
+                <TextView
+                    android:id="@+id/lblTotal"
+                    android:layout_below="@+id/lblTotalPedido"
+                    android:layout_marginTop="5dp"
+                    android:textSize="35dp"
+                    android:text="0000.00"
+                    android:textColor="@color/colorNegro"
+                    android:textStyle="bold"
+                    android:textAlignment="textEnd"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end" />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnRegistrarPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_totalventa"
+                android:textColor="@color/colorBlanco"
+                android:background="@color/colorAzul"
+                android:textStyle="bold"
+                android:text="GUARDAR PEDIDO"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

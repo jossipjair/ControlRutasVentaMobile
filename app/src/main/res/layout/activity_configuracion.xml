@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controlador.Configuracion">
+<!--
+    <TextView
+        android:id="@+id/lblMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Sincroniza Tablas"
+        android:textAlignment="center"
+        android:textColor="@color/colorAzul"
+        android:textSize="30dp" />
+
+    <CheckBox
+        android:id="@+id/chkClienteProveedor"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/lblMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLIENTE PROVEEDOR"/>
+
+    <CheckBox
+        android:id="@+id/chkEmpleado"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chkClienteProveedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EMPLEADO"/>
+
+    <CheckBox
+        android:id="@+id/chkProducto"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/chkEmpleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRODUCTO"/>
+
+
+    <CheckBox
+        android:id="@+id/chkTodas"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/chkProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="SELECCIONAR TODO"/>
+    <Button
+        android:id="@+id/btnSincroniza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chkTodas"
+        android:background="@color/colorVerde"
+        android:textColor="@color/colorBlanco"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="INCIAR SINCRONIZACION"/>
+
+
+    <TextView
+        android:id="@+id/lblDivisionMenu"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorNegro"
+        android:layout_below="@+id/btnSincroniza"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlanco" />
+-->
+    <TextView
+        android:id="@+id/lblConfiguracion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="30dp"
+        android:text="Configura Servicio"
+        android:textAlignment="center"
+        android:textColor="@color/colorAzul"
+        android:textSize="25dp"/>
+
+    <EditText
+        android:id="@+id/txtServidor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/lblConfiguracion"
+        android:hint="Ip Servidor"
+        android:inputType="textPersonName"
+        android:text="http://192.168.43.156:1823/Api/" />
+
+    <Button
+        android:id="@+id/btnGrabar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAzul"
+        android:text="GRABAR"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorBlanco"
+        android:textSize="15dp"
+        android:layout_below="@+id/txtServidor"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSalirSistema"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorRojo"
+        android:text="VOLVER A MENU"
+        android:textColor="@color/colorBlanco"
+        android:layout_below="@id/btnGrabar"
+        android:layout_marginTop="15dp"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+</RelativeLayout>

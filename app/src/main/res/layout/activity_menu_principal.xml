@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorBlanco"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Controlador.MenuPrincipal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imbRegistroCliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlanco"
+                android:src="@drawable/cliente"
+                />
+
+            <TextView
+                android:id="@+id/lblRegistroClientes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imbRegistroCliente"
+                android:layout_marginTop="10dp"
+                android:text="Registro de Clientes"
+                android:textAlignment="center"
+                android:textColor="@color/colorAzul"
+                android:textSize="20dp"
+                />
+
+            <ImageButton
+                android:id="@+id/imbRegistroPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/botella"
+                android:background="@color/colorBlanco"
+                android:layout_below="@id/lblRegistroClientes"/>
+
+            <TextView
+                android:id="@+id/lblRegistroPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imbRegistroPedido"
+                android:text="Registro de Pedidos"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorAzul"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/imbVisualizaRutas"
+                android:layout_below="@+id/lblRegistroPedido"
+                android:layout_marginTop="80dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBlanco"
+                android:src="@drawable/ruta" />
+
+            <TextView
+                android:id="@+id/lblVisualizarRuta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imbVisualizaRutas"
+                android:layout_marginTop="10dp"
+                android:text="Visualizar Ubicación"
+                android:textAlignment="center"
+                android:textColor="@color/colorAzul"
+                android:textSize="20dp" />
+            <!--
+                        <ImageButton
+                            android:id="@+id/imbSincronizaDatos"
+                            android:layout_below="@+id/lblVisualizarRuta"
+                            android:layout_marginTop="40dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorBlanco"
+                            android:src="@drawable/sincroniza" />
+
+                        <TextView
+                            android:id="@+id/lblSincronizaDatos"
+                            android:layout_below="@+id/imbSincronizaDatos"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Sincronizar Datos"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorAzul" />
+
+                        <ImageButton
+                            android:id="@+id/imbConfiguracion"
+                            android:layout_marginTop="20dp"
+                            android:background="@color/colorBlanco"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lblSincronizaDatos"
+                            android:src="@drawable/ajustes"/>
+
+                        <TextView
+                            android:id="@+id/lblConfiguracion"
+                            android:layout_below="@+id/imbConfiguracion"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Configuración"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorAzul" />
+            -->
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

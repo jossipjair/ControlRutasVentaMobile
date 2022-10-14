@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblAgregaProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="AGREGAR PRODUCTOS"
+        android:textAlignment="center"
+        android:textColor="@color/colorAzul"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/lblDetalelProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lblAgregaProductos"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorCeleste"
+        android:text="Detalle Producto"
+        android:textAlignment="center"
+        android:textColor="@color/colorBlanco"
+        android:textStyle="bold" />
+
+
+    <Spinner
+        android:id="@+id/spProductoDetalle"
+        android:layout_width="match_parent"
+        android:layout_below="@id/lblDetalelProducto"
+        android:background="@color/colorPlomo"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:spinnerMode="dialog"
+        android:layout_height="wrap_content"></Spinner>
+
+    <EditText
+        android:id="@+id/txtPrecioProducto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spProductoDetalle"
+        android:hint="PRECIO PRODUCTO"
+        android:textAlignment="center"
+
+        android:inputType="numberDecimal"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/txtCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPrecioProducto"
+        android:hint="INGRESA CANTIDAD"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/txtImporteDetallePedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCantidad"
+        android:hint="IMPORTE DETALLE PEDIDO"
+        android:enabled="false"
+        android:textStyle="bold"
+        android:textColor="@color/colorNegro"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btnAgregarDetalleProducto"
+        android:text="Agregar Detalle"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:background="@color/colorAzul"
+        android:textColor="@color/colorBlanco"
+        android:layout_below="@+id/txtImporteDetallePedido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+<!--
+    <GridView
+        android:id="@+id/gvDetalleProductos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnAgregarDetalleProducto"
+        />-->
+
+    <TextView
+        android:id="@+id/lblBarraSepara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnAgregarDetalleProducto"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="#d1d1d1"
+        android:textSize="2dp"></TextView>
+
+    <ListView
+        android:id="@+id/lvDetallePedido"
+        android:layout_below="@+id/lblBarraSepara"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#d1d1d1"
+        android:dividerHeight="2dp"></ListView>
+
+</RelativeLayout>

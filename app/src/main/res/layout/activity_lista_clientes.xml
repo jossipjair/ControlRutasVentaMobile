@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controlador.ListaClientes">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Lista de Clientes"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorAzul"
+        android:id="@+id/lblRegistroCliente" />
+
+    <Button
+        android:id="@+id/btnRegistroClienteLista"
+        android:layout_below="@+id/lblRegistroCliente"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorVerde"
+        android:textColor="@color/colorBlanco"
+        android:text="REGISTRA NUEVO CLIENTE"/>
+
+    <!--<GridView
+        android:id="@+id/gvClientes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegistroClienteLista"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        android:visibility="visible"
+        android:numColumns="3"></GridView>-->
+    <TextView
+        android:id="@+id/lblBarraSepara"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnRegistroClienteLista"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:background="#d1d1d1"
+        android:textSize="1dp"></TextView>
+
+    <ListView
+        android:id="@+id/lvClientes"
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblBarraSepara"
+        android:divider="#d1d1d1"
+        android:dividerHeight="1dp">
+    </ListView>
+
+</RelativeLayout>
